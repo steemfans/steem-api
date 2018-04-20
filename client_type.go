@@ -1,7 +1,7 @@
 package rpc
 
 import (
-	"github.com/asuleymanov/rpc/types"
+	"github.com/smallnest/steem-api/types"
 )
 
 var (

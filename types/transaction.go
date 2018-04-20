@@ -2,7 +2,7 @@ package types
 
 import (
 	// RPC
-	"github.com/asuleymanov/rpc/encoding/transaction"
+	"github.com/smallnest/steem-api/encoding/transaction"
 
 	// Vendor
 	"github.com/pkg/errors"

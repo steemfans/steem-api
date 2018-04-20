@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"strconv"
 
-	"github.com/asuleymanov/golos-go/encoding/transaction"
+	"github.com/smallnest/steem-api/encoding/transaction"
 )
 
 type ContentMetadata map[string]interface{}

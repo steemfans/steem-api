@@ -3,13 +3,13 @@ package rpc
 import (
 	"errors"
 	// RPC
-	"github.com/asuleymanov/rpc/apis/database"
-	"github.com/asuleymanov/rpc/apis/follow"
-	"github.com/asuleymanov/rpc/apis/market"
-	"github.com/asuleymanov/rpc/apis/networkbroadcast"
-	"github.com/asuleymanov/rpc/transactions"
-	"github.com/asuleymanov/rpc/transports"
-	"github.com/asuleymanov/rpc/transports/websocket"
+	"github.com/smallnest/steem-api/apis/database"
+	"github.com/smallnest/steem-api/apis/follow"
+	"github.com/smallnest/steem-api/apis/market"
+	"github.com/smallnest/steem-api/apis/networkbroadcast"
+	"github.com/smallnest/steem-api/transactions"
+	"github.com/smallnest/steem-api/transports"
+	"github.com/smallnest/steem-api/transports/websocket"
 )
 
 // Client can be used to access Steem remote APIs.
@@ -34,7 +34,7 @@ type Client struct {
 	//Chain Id
 	Chain *transactions.Chain
 
-	// Current keys for operations
+	// Current keys for operations, wif format
 	CurrentKeys *Keys
 }
 

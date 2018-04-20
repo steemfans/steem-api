@@ -4,12 +4,12 @@ import (
 	"log"
 	"time"
 
-	client "github.com/asuleymanov/rpc"
-	"github.com/asuleymanov/rpc/types"
+	client "github.com/smallnest/steem-api"
+	"github.com/smallnest/steem-api/types"
 )
 
 func main() {
-	cls, _ = client.NewClient([]string{"wss://rpc.buildteam.io"}, "steem")
+	cls, _ := client.NewClient([]string{"wss://rpc.buildteam.io"}, "steem")
 	if err != nil {
 		log.Fatalln("Error:", err)
 	}

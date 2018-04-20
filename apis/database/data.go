@@ -2,7 +2,7 @@ package database
 
 import (
 	// RPC
-	"github.com/asuleymanov/rpc/types"
+	"github.com/smallnest/steem-api/types"
 )
 
 type DiscussionQuery struct {

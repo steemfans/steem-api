@@ -11,7 +11,7 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/pkg/errors"
 
-	"github.com/asuleymanov/jsonrpc2"
+	"github.com/smallnest/jsonrpc2"
 	tomb "gopkg.in/tomb.v2"
 )
 

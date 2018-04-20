@@ -2,7 +2,7 @@ package follow
 
 import (
 	"encoding/json"
-	"github.com/asuleymanov/rpc/types"
+	"github.com/smallnest/steem-api/types"
 	"strconv"
 	"strings"
 )

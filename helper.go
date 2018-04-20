@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/asuleymanov/rpc/types"
+	"github.com/smallnest/steem-api/types"
 )
 
 //FollowersList returns the subscriber's list of subscribers

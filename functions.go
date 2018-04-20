@@ -11,10 +11,10 @@ import (
 	"github.com/pkg/errors"
 
 	// RPC
-	"github.com/asuleymanov/rpc/encoding/wif"
-	"github.com/asuleymanov/rpc/transactions"
-	"github.com/asuleymanov/rpc/translit"
-	"github.com/asuleymanov/rpc/types"
+	"github.com/smallnest/steem-api/encoding/wif"
+	"github.com/smallnest/steem-api/transactions"
+	"github.com/smallnest/steem-api/translit"
+	"github.com/smallnest/steem-api/types"
 )
 
 const fdt = `"20060102t150405"`

@@ -1,8 +1,8 @@
 package rpc
 
 import (
-	"github.com/asuleymanov/rpc/transactions"
-	"github.com/asuleymanov/rpc/types"
+	"github.com/smallnest/steem-api/transactions"
+	"github.com/smallnest/steem-api/types"
 	"time"
 )
 

@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 
 	// RPC
-	"github.com/asuleymanov/rpc/transports"
+	"github.com/smallnest/steem-api/transports"
 
 	// Vendor
 	"github.com/pkg/errors"

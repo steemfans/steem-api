@@ -1,17 +1,17 @@
 package main
 
 import (
+	"os"
+
 	"github.com/kr/pretty"
 
 	// Stdlib
-	"flag"
+
 	"log"
 
 	// RPC
 	client "github.com/smallnest/steem-api"
-
 	// Vendor
-	"github.com/pkg/errors"
 )
 
 // private key to wif by cli_wallet:
@@ -23,6 +23,12 @@ var (
 )
 
 func main() {
+	if len(os.Args) != 3 {
+		log.Fatal("2 arguments required: ", os.Args)
+	}
+	voter = os.Args[1]
+	key = os.Args[2]
+
 	cls, err := client.NewClient([]string{"wss://gtg.steem.house:8090"}, "steem")
 	if err != nil {
 		log.Fatalln("Error:", err)
@@ -38,16 +44,9 @@ func main() {
 }
 
 func run(cls *client.Client) (err error) {
-	flag.Parse()
-	// Process args.
-	args := flag.Args()
 
-	if len(args) != 2 {
-		return errors.New("2 arguments required")
-	}
-	author, permlink := args[0], args[1]
+	resp, err := cls.Post("smallnest", "一个中文名字的标题", "明月松间照，清泉石上流", "", "", "", []string{"test"}, &client.PCOptions{})
 
-	resp, err := cls.Vote(voter, author, permlink, 10000)
 	if err != nil {
 		return
 	}

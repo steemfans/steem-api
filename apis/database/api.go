@@ -7,8 +7,8 @@ import (
 	// Vendor
 	"github.com/pkg/errors"
 
-	"github.com/asuleymanov/rpc/transports"
-	"github.com/asuleymanov/rpc/types"
+	"github.com/smallnest/steem-api/transports"
+	"github.com/smallnest/steem-api/types"
 )
 
 const apiID = "database_api"
