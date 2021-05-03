@@ -11,7 +11,7 @@ Golang RPC client library for [Steem](https://steemit.com).
 ## Usage
 
 ```go
-import "github.com/smallnest/steem-api/client"
+import "github.com/steemfans/steem-api/client"
 ```
 
 
